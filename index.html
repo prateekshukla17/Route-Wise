@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Route Wise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Route Wise</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button id="dark-mode-toggle">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <h2>RouteWise</h2>
+        <form id="searchForm">
+          <label for="from">From:</label>
+          <input
+            type="text"
+            id="from"
+            name="from"
+            placeholder="Enter starting location"
+            required
+          />
+
+          <label for="to">To:</label>
+          <input
+            type="text"
+            id="to"
+            name="to"
+            placeholder="Enter destination"
+            required
+          />
+
+          <label for="preference">Preference:</label>
+          <select id="preference" name="preference">
+            <option value="time">Time</option>
+            <option value="cost">Cost</option>
+            <option value="comfort">Comfort</option>
+          </select>
+
+          <button type="submit">Search</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <p>&copy; 2024 Travel Optimizer. All rights reserved.</p>
+        <p>Ceo and Cofounder:Prateek</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
